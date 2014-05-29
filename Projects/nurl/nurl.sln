@@ -1,0 +1,38 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.21005.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "nurl.app", "nurl.app\nurl.app.csproj", "{7F51F2B1-459C-4516-A6C9-7F22690012AD}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "nurl.doc", "nurl.doc", "{E6622070-CFB7-4342-93A3-22BAA53E64C1}"
+	ProjectSection(SolutionItems) = preProject
+		nurl.doc\specs.txt = nurl.doc\specs.txt
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "nurl.lib", "nurl.lib", "{0BE1208F-5CF5-4F01-8EF9-29B7C33ADA38}"
+	ProjectSection(SolutionItems) = preProject
+		nurl.lib\here all the libs.txt = nurl.lib\here all the libs.txt
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "nurl.test", "nurl.test\nurl.test.csproj", "{4847DD0E-08C8-4319-ADCA-E58AB7105E5C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7F51F2B1-459C-4516-A6C9-7F22690012AD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7F51F2B1-459C-4516-A6C9-7F22690012AD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7F51F2B1-459C-4516-A6C9-7F22690012AD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7F51F2B1-459C-4516-A6C9-7F22690012AD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4847DD0E-08C8-4319-ADCA-E58AB7105E5C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4847DD0E-08C8-4319-ADCA-E58AB7105E5C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4847DD0E-08C8-4319-ADCA-E58AB7105E5C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4847DD0E-08C8-4319-ADCA-E58AB7105E5C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
