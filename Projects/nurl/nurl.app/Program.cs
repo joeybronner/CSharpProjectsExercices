@@ -13,8 +13,7 @@ namespace nurl.app
 			Console.WriteLine("Starting...\n");
 			
 			// calling the start method (file: Nurl.cs)
-			// disable once SuggestUseVarKeywordEvident
-			Nurl app = new Nurl(args);
+			var app = new Nurl(args);
 			
 			Console.Read();
         }

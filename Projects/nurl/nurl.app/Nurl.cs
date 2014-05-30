@@ -9,6 +9,7 @@
 using System;
 using System.Collections.Generic;
 using NDesk.Options;
+using nurl.app.nurl.feature.get;
 
 namespace nurl.app
 {
@@ -21,11 +22,9 @@ namespace nurl.app
 		/* private variables */
 		private String 		context;	// 1st
 		private String 		url;		// 2nd
-		private String 		option;		// 3th 
+		private String 		savepath;		// 3th 
 		private String 		time;		// 4th
 		private String 		avgtime; 	// 5th
-		private const int	minargs=3;	// min number of args
-		private const int	maxargs=6;	// max number of args
 		/* ----------------- */
 		
 		public Nurl()
@@ -46,10 +45,10 @@ namespace nurl.app
 				// parsing the command line using ndesk.options
 				new OptionSet()
 				{
-					{ "url=",  		v => url 		= v.ToLower() 	},
-					{ "-save=", 	v => option 	= v.ToLower() 	},
-				   	{ "-time=", 	v => time 		= v 			},
-					{ "avg",		v => avgtime	= v.ToLower() 	}
+					{ "url=",  		u => url 		= u.ToLower() 	},
+					{ "save=", 	s => savepath 	= s.ToLower() 	},
+				   	{ "time=", 	t => time 		= t				},
+					{ "avg",		a => avgtime	= a.ToLower() 	}
 				}.Parse(args);
 
 				if (!IsValidContext())
@@ -62,9 +61,11 @@ namespace nurl.app
 					{
 					    case "get":
 					        Console.WriteLine("GET process loading:\n");
+							var get = new NurlGet(url, savepath);
 					        break;
 					    case "test":
 					        Console.WriteLine("TEST process loading:\n");
+							Console.WriteLine("Development in progress...");
 					        break;
 					}
 				}

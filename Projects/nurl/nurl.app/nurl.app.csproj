@@ -42,7 +42,7 @@
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
     <StartAction>Project</StartAction>
-    <StartArguments>GET -url "hTTp://abc"</StartArguments>
+    <StartArguments>get -url "http://google.fr" -save "c:\abc.json"</StartArguments>
     <CheckForOverflowUnderflow>False</CheckForOverflowUnderflow>
     <BaseIntermediateOutputPath>obj\</BaseIntermediateOutputPath>
   </PropertyGroup>
@@ -68,8 +68,13 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Nurl.cs" />
+    <Compile Include="nurl.feature.get\NurlGet.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="nurl.feature.get" />
+    <Folder Include="nurl.feature.test" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
